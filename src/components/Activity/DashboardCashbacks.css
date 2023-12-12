@@ -1,0 +1,57 @@
+/* DashboardCashbacks.css */
+
+.dashboard-cashbacks-container {
+  margin: 20px;
+}
+
+.cashbacks-header {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.cashbacks-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.table-header {
+  background-color: rgb(53, 146, 53);
+  color: white;
+  font-family: "Roboto";
+  font-weight: 400;
+  letter-spacing: 1px;
+  font-size: 14px;
+}
+
+.table-header {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #ddd;
+  font-family: "roboto";
+  font-size: 14px;
+}
+
+.dashboard-td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #ddd;
+  background-color: white;
+  font-family: "roboto";
+  font-size: 14px;
+}
+
+.link {
+  color: #007bff; /* Blue color for links, adjust as needed */
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.Cashback-empty-text {
+  font-family: "Roboto";
+  font-size: 14px;
+  text-align: center;
+}

@@ -1,0 +1,105 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Perksapi Documentation",
+    "version": "1.0.0",
+    "description": "A Detailed guide to how to use perksapi."
+  },
+  "servers": [
+    {
+      "url": "https://perksapi.com/"
+    }
+  ],
+  "paths": {
+    "/api/v1/coupon": {
+      "get": {
+        "tags": ["Brand Offer"],
+        "responses": {
+          "200": {
+            "description": "Successfully retrieved a random coupon.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Coupon"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "No coupons found.",
+            "content": {
+              "application/json": {
+                "example": {
+                  "status": "error",
+                  "message": "No coupons found"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Internal server error.",
+            "content": {
+              "application/json": {
+                "example": {
+                  "status": "error",
+                  "message": "Internal server error"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Coupon": {
+        "type": "object",
+        "properties": {
+          "brandName": {
+            "type": "string",
+            "description": "The brand name."
+          },
+          "redeemNow": {
+            "type": "string",
+            "description": "The URL of the brand's website."
+          },
+          "title": {
+            "type": "string",
+            "description": "The title of the coupon."
+          },
+          "subtitle": {
+            "type": "string",
+            "description": "The subtitle of the coupon."
+          },
+          "description": {
+            "type": "string",
+            "description": "The description of the coupon."
+          },
+          "CouponCode": {
+            "type": "string",
+            "description": "The coupon code."
+          },
+          "BrandLogo": {
+            "type": "string",
+            "description": "The URL of the brand's logo image."
+          },
+          "category": {
+            "type": "string",
+            "description": "The category of the coupon."
+          },
+          "couponPNG": {
+            "type": "string",
+            "description": "The category of the coupon."
+          }
+        }
+      }
+    }
+  },
+  "tags": [
+    {
+      "name": "Brand Offer",
+      "description": "API for getting brand offers"
+    }
+  ]
+}

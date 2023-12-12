@@ -1,0 +1,36 @@
+.about-container {
+  margin: 100px 250px;
+}
+
+.about-heading {
+  font-family: "Lora", sans-serif;
+  font-weight: 500;
+  border-bottom: 4px solid rgb(3, 129, 18);
+  display: inline-block;
+  padding: 4px;
+  font-size: 30px;
+  color: RGB(0, 54, 0);
+}
+
+.about-para {
+  font-family: "Roboto", sans-serif;
+  line-height: 30px;
+  letter-spacing: 0.3px;
+  color: RGB(0, 31, 0);
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  .about-container {
+    margin: 15px 10px 50px 10px;
+  }
+  .about-heading {
+    font-size: 25px;
+    color: black;
+  }
+  .about-para {
+    line-height: 25px;
+    font-size: 15px;
+    padding-bottom: 10px;
+  }
+}

@@ -1,0 +1,166 @@
+.active {
+  color: rgb(3, 129, 18);
+  border-top: 4px solid rgb(3, 129, 18);
+}
+.nav-container {
+  margin: 25px 150px;
+}
+.nav-logo {
+  height: 65px;
+  cursor: pointer;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+}
+
+nav .title {
+  font-size: 1.5rem;
+  margin: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  padding: 8px 5px;
+  margin: 0 12px;
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  color: black;
+  font-size: 17px;
+}
+
+nav ul li a:hover {
+  color: rgb(3, 129, 18);
+  border-top: 4px solid rgb(3, 129, 18);
+}
+
+nav .menu {
+  display: none;
+  position: absolute;
+  top: 1.3rem;
+  right: 1.3rem;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 2.25rem;
+  height: 2rem;
+}
+
+nav .menu span {
+  height: 0.4rem;
+  width: 100%;
+  background-color: #343a40;
+  border-radius: 0.2rem;
+}
+.nav-button {
+  padding: 15px 40px;
+  margin: 0 0 0 20px;
+  cursor: pointer;
+  background-color: rgb(3, 129, 18);
+  color: white;
+  border-color: rgb(3, 129, 18);
+  border-radius: 0;
+  transition: border-color 0.4s ease 0s, background-color 0.4s ease 0s;
+  border: 2px solid rgb(3, 129, 18);
+  font-size: 14px;
+  font-family: "Roboto";
+  letter-spacing: 1px;
+}
+
+.nav-button:hover {
+  background-color: white;
+  color: rgb(3, 129, 18);
+}
+
+.popup-in-heading {
+  font-family: "Roboto", sans-serif;
+  color: rgb(3, 129, 18);
+  font-size: 30px;
+}
+.popup-in-input {
+  display: block;
+  margin: 15px 150px;
+}
+
+.popup-in-button {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 480px) {
+  .nav-container {
+    margin: 0 5px;
+  }
+  .nav-logo {
+    height: 60px;
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+  nav .menu {
+    display: flex;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .active {
+    color: rgb(3, 129, 18);
+    border-top: 0px;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    width: 97%;
+    margin-left: 5px;
+    margin-bottom: 0.25rem;
+    background-color: #f1f3f5;
+    align-self: center;
+    gap: 20px;
+    padding: 30px 0;
+    border: 1px solid black;
+    border-radius: 15px;
+    position: absolute; /* Position the menu absolutely */
+    top: 55px; /* Position it below the navigation bar */
+    left: 0;
+    z-index: 1000;
+  }
+
+  nav ul.open {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+  }
+
+  nav ul li {
+    width: 100%;
+    text-align: center;
+  }
+
+  nav ul li a {
+    margin: 0.2rem 0.5rem;
+  }
+  .popup-in-heading {
+    font-size: 20px;
+  }
+  .popup-in-input {
+    margin: 15px 25px;
+  }
+  .nav-button {
+    margin: 0;
+  }
+}

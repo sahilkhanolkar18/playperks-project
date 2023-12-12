@@ -1,0 +1,78 @@
+.login-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f1f3f5;
+  margin: 0;
+}
+
+.playperks-logo-login {
+  display: block;
+  margin: 15px auto 0 auto;
+  margin-bottom: 1.38rem;
+  height: 60px;
+}
+
+.login-form {
+  width: 350px;
+  border-top: 5px solid green;
+  background-color: #fff;
+  height: 380px;
+}
+
+.login-title {
+  text-align: center;
+  margin-bottom: 1.38rem;
+  font-family: "Lora", "sans-serif";
+  font-size: 22px;
+  font-weight: 500;
+  margin-top: 0px;
+  color: RGB(0, 31, 0);
+}
+
+.btn-login {
+  display: block;
+  letter-spacing: 0.5px;
+  width: 78%;
+  margin: 25px auto;
+  padding: 6px 0;
+  color: white;
+  background-color: green;
+  border: 0;
+  cursor: pointer;
+  margin-bottom: 0;
+}
+.btn-login:hover {
+  background-color: rgb(1, 97, 1);
+}
+
+.login-lable {
+  display: block;
+  font-family: "Roboto", "sans-serif";
+  margin-left: 42px;
+  font-size: 14px;
+  color: RGB(0, 31, 0);
+}
+.login-input {
+  display: block;
+  width: 70%;
+  margin: 5px auto;
+  height: 16px;
+  margin-bottom: 15px;
+  background: #f8fafc;
+  border: 1px solid #cbd5e1;
+  padding: 0.375rem 0.75rem;
+}
+.login-text {
+  text-align: center;
+  margin-top: 18px;
+  font-family: "Roboto";
+  font-size: 13px;
+  color: rgb(71, 71, 71);
+}
+
+.login-switch {
+  text-decoration: underline;
+  cursor: pointer;
+}

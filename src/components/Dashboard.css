@@ -1,0 +1,236 @@
+.dashboard-container {
+  margin-top: 20px;
+}
+.dashboard-top-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 15px;
+}
+.dashboard-logo {
+  height: 60px;
+  cursor: pointer;
+}
+.dashboard-title {
+  font-size: 32px;
+  font-family: "Roboto";
+  font-weight: 500;
+  margin: 0;
+}
+
+.dashboard-logout {
+  padding: 10px 15px;
+  background-color: rgb(53, 146, 53);
+  color: white;
+  border: 0;
+  font-family: "Roboto";
+  cursor: pointer;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  margin: 10px 20px;
+}
+.dashboard-logout-logo {
+  height: 20px;
+}
+.dashboard-logout:hover {
+  background-color: rgb(0, 114, 0);
+}
+.dashboard-main-wrapper {
+  min-height: 90vh;
+  background-color: #f1f3f5;
+}
+.dashboard-main-title {
+  font-family: "Roboto";
+  font-size: 28px;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  gap: 10px;
+  padding: 10px 20px;
+  font-weight: 500;
+  color: rgb(46, 46, 46);
+}
+
+.dashboard-share-earn-wrapper {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  margin: 10px 50px;
+}
+.dashboard-earn-div {
+  background-color: white;
+  padding: 40px;
+  width: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+.dashboard-pending {
+  border-bottom: 5px solid rgb(233, 185, 73);
+}
+.dashboard-confirmed {
+  border-bottom: 5px solid rgb(73, 116, 233);
+}
+.dashboard-total {
+  border-bottom: 5px solid rgb(233, 132, 73);
+}
+.inner-pending {
+  background-color: rgb(252, 239, 199);
+}
+.inner-confirmed {
+  background-color: rgb(211, 222, 255);
+}
+.inner-total {
+  background-color: rgb(247, 200, 173);
+}
+.inner-pending-title {
+  color: rgb(233, 185, 73);
+}
+.inner-confirmed-title {
+  color: rgb(73, 116, 233);
+}
+.inner-total-title {
+  color: rgb(233, 132, 73);
+}
+.dashboard-earn-title {
+  font-family: "Roboto";
+  letter-spacing: 1.2px;
+}
+.dashboard-earn-value {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 32px;
+  margin-top: 20px;
+  opacity: 78%;
+  letter-spacing: 0.5px;
+}
+
+.dashboard-activity-wrapper {
+  margin: 30px 50px;
+}
+
+.dashboard-earn-stats-logo {
+  font-size: 40px;
+}
+
+.dashboard-earn-stats-logo-holder {
+  /* background-color: rgb(252, 239, 199); */
+  padding: 20px 25px;
+}
+.dashboard-activity-title {
+  font-family: "roboto";
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.dashboard-clicks-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 15px;
+  font-family: "Roboto";
+  letter-spacing: 0.5px;
+  font-weight: 500;
+}
+.dashboard-click-toggle {
+  cursor: pointer;
+  border-bottom: 3px solid #f1f3f5;
+  margin: 0;
+  padding-bottom: 3px;
+}
+.dashboard-click-toggle:hover {
+  border-bottom: 3px solid rgb(0, 114, 0);
+  color: rgb(0, 114, 0);
+}
+
+.dashboard-activity-active {
+  border-bottom: 3px solid rgb(0, 114, 0);
+  color: rgb(0, 114, 0);
+}
+
+.dashboard-user-heading-wrapper {
+  /* background-color: yellow; */
+  padding-top: 25px;
+  padding-left: 25px;
+}
+
+.dashboard-user-heading {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 22px;
+  margin-bottom: 0;
+}
+.dashboard-user-api-wrapper {
+  background-color: white;
+  padding: 0;
+  padding-left: 15px;
+  display: inline-block;
+  border: 1px solid rgb(187, 184, 184);
+  border-radius: 8px;
+  margin-top: 20px;
+  position: relative;
+}
+
+.dashboard-user-api-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  font-family: "roboto";
+  margin: 0;
+}
+
+.dashboard-user-copy-icon {
+  font-size: 20px;
+  padding: 15px 15px;
+  margin: 0;
+  border-radius: 8px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.dashboard-user-copy-icon:hover {
+  background-color: #e9ecef;
+}
+
+.tooltip {
+  position: absolute;
+  top: 59px;
+  left: 92%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 12px;
+  white-space: nowrap;
+  font-family: "roboto";
+  display: inline-block;
+}
+.dashboard-user-api-note-bold {
+  font-weight: 500;
+}
+
+.dashboard-user-api-note-wrapper {
+  background-color: #d4edda;
+  display: inline-block;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+.dashboard-user-api-note {
+  font-family: "roboto";
+  font-size: 14px;
+  padding: 0px 15px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #3c763d;
+}
+.note-icon-dashboard-user {
+  font-size: 17px;
+  color: #3c763d;
+}
